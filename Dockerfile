@@ -13,5 +13,6 @@ RUN python3 -m venv /opt/venv && \
 
 ENV PATH=/opt/venv/bin:$PATH
 
+EXPOSE 8080
+
 ENTRYPOINT ["python", "run.py"]
-CMD ["80"]
