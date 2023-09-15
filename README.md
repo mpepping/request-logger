@@ -5,7 +5,7 @@ A simple webserver that accepts all GET and POST requests. Useful for analyzing 
 To run the app as a container:
 
 ```lang=shell
-docker run -ti --rm -p 8080:8080 docker pull ghcr.io/mpepping/request-logger:latest
+docker run -ti --rm -p 8080:8080 ghcr.io/mpepping/request-logger:latest
 ```
 
 Or as a k8s deployment + service :
