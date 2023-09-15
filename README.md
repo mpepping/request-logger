@@ -2,10 +2,11 @@
 
 A simple webserver that accepts all GET and POST requests. Useful for analyzing or troubleshooting HTTP requests. Requests are logged to stdout. The app listens by default on port 8080/tcp. Optionally, the port can be specified as an argument (e.g., `CMD`).
 
-To run the app as a container:
+To run the app as a container in Podman or Docker:
 
 ```lang=shell
-docker run -ti --rm -p 8080:8080 ghcr.io/mpepping/request-logger:latest
+docker run -ti --rm -p 8080:8080 ghcr.io/mpepping/request-logger:latest ||\
+podman run -ti --rm -p 8080:8080 ghcr.io/mpepping/request-logger:latest
 ```
 
 Or as a k8s deployment + service :
@@ -63,4 +64,3 @@ spec:
     app: request-logger
 
 ```
-
